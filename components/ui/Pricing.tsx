@@ -25,7 +25,7 @@ const Pricing: React.FC<PricingProps> = ({ pricingTypes, isAnnual, toggleAnnual 
       </div>
       <div className="grid grid-cols-3 gap-4">
         {pricingTypes.map((pricingType, index) => (
-          <div key={index} className="bg-white p-4 rounded-lg shadow-md">
+          <div key={index} className="bg-white p-4 rounded-lg shadow-md hover:border-blue-500 border-transparent border-2 transition-colors">
             <h3 className="text-xl font-bold mb-2">{pricingType.type}</h3>
             <p className="text-2xl font-bold mb-4">${pricingType.price}</p>
             <ul className="mb-4">
